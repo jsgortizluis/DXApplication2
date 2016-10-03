@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75607F36-0C48-4BE0-B470-8BAAAA3FD0C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXApplication2</RootNamespace>
+    <AssemblyName>DXApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ORMDataModel1Code\analysis.cs" />
+    <Compile Include="Model\ORMDataModel1Code\appearance.cs" />
+    <Compile Include="Model\ORMDataModel1Code\attendance.cs" />
+    <Compile Include="Model\ORMDataModel1Code\attributeitems.cs" />
+    <Compile Include="Model\ORMDataModel1Code\auditdataitempersistent.cs" />
+    <Compile Include="Model\ORMDataModel1Code\auditedobjectweakreference.cs" />
+    <Compile Include="Model\ORMDataModel1Code\call.cs" />
+    <Compile Include="Model\ORMDataModel1Code\case1.cs" />
+    <Compile Include="Model\ORMDataModel1Code\caseparty.cs" />
+    <Compile Include="Model\ORMDataModel1Code\ConnectionHelper.cs" />
+    <Compile Include="Model\ORMDataModel1Code\docket.cs" />
+    <Compile Include="Model\ORMDataModel1Code\docketitem.cs" />
+    <Compile Include="Model\ORMDataModel1Code\docketstatus.cs" />
+    <Compile Include="Model\ORMDataModel1Code\dockettime.cs" />
+    <Compile Include="Model\ORMDataModel1Code\document.cs" />
+    <Compile Include="Model\ORMDataModel1Code\documentfiledata.cs" />
+    <Compile Include="Model\ORMDataModel1Code\event1.cs" />
+    <Compile Include="Model\ORMDataModel1Code\filedata.cs" />
+    <Compile Include="Model\ORMDataModel1Code\flagged.cs" />
+    <Compile Include="Model\ORMDataModel1Code\form.cs" />
+    <Compile Include="Model\ORMDataModel1Code\kind.cs" />
+    <Compile Include="Model\ORMDataModel1Code\kpidefinition.cs" />
+    <Compile Include="Model\ORMDataModel1Code\kpihistoryitem.cs" />
+    <Compile Include="Model\ORMDataModel1Code\kpiinstance.cs" />
+    <Compile Include="Model\ORMDataModel1Code\kpiscorecard.cs" />
+    <Compile Include="Model\ORMDataModel1Code\kpiscorecardscorecards_kpiinstanceindicators.cs" />
+    <Compile Include="Model\ORMDataModel1Code\moduleinfo.cs" />
+    <Compile Include="Model\ORMDataModel1Code\note.cs" />
+    <Compile Include="Model\ORMDataModel1Code\notice.cs" />
+    <Compile Include="Model\ORMDataModel1Code\party.cs" />
+    <Compile Include="Model\ORMDataModel1Code\remarksitems.cs" />
+    <Compile Include="Model\ORMDataModel1Code\reportdatav2.cs" />
+    <Compile Include="Model\ORMDataModel1Code\resource.cs" />
+    <Compile Include="Model\ORMDataModel1Code\resourceresources_eventevents.cs" />
+    <Compile Include="Model\ORMDataModel1Code\ruleapplied.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemmemberpermissionsobject.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemobjectpermissionsobject.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemrole.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemroleparentroles_securitysystemrolechildroles.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemtypepermissionsobject.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemuser.cs" />
+    <Compile Include="Model\ORMDataModel1Code\securitysystemuserusers_securitysystemroleroles.cs" />
+    <Compile Include="Model\ORMDataModel1Code\stage.cs" />
+    <Compile Include="Model\ORMDataModel1Code\standing.cs" />
+    <Compile Include="Model\ORMDataModel1Code\status.cs" />
+    <Compile Include="Model\ORMDataModel1Code\statusincident.cs" />
+    <Compile Include="Model\ORMDataModel1Code\statusstatus_ruleappliedruleapplied.cs" />
+    <Compile Include="Model\ORMDataModel1Code\statusstatus_stagestage.cs" />
+    <Compile Include="Model\ORMDataModel1Code\time.cs" />
+    <Compile Include="Model\ORMDataModel1Code\type.cs" />
+    <Compile Include="Model\ORMDataModel1Code\typetype_kindkind.cs" />
+    <Compile Include="Model\ORMDataModel1Code\typetype_ruleappliedruleapplied.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Model\ORMDataModel1.xpo" />
+    <None Include="Model\ORMDataModel1.xpo.diagram">
+      <DependentUpon>ORMDataModel1.xpo</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
