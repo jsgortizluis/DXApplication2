@@ -30,6 +30,9 @@ namespace DXApplication2
             xpView1.Reload();
             gridControl1.DataSource = xpView1;
 
+            MessageBox.Show("symelle");
+            this.Close();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
